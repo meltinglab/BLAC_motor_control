@@ -85,8 +85,16 @@ title('Power Curve')
 
 %% CREAZIONE DEL PROFILO DI VELOCITà
 
-time = linspace(1, 50, 100000);
-vehiclespeed = 30*sin(time)+35;
+time = linspace(1, 50, 10000);
+% vehiclespeed = 30*sin(time)+35;
+vehiclespeed = zeros(1,length(time));
+for i = 1:length(time)
+    if time(i) < 1.1
+        vehiclespeed(i) = 0;
+    else
+        vehiclespeed(i) = 5;
+    end
+end
 
 figure 
 plot(time, vehiclespeed)
