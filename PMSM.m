@@ -92,7 +92,7 @@ for i = 1:length(time)
     if time(i) < 1.1
         vehiclespeed(i) = 0;
     else
-        vehiclespeed(i) = 5;
+        vehiclespeed(i) = 25;
     end
 end
 
