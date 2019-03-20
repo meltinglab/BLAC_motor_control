@@ -1,4 +1,9 @@
 %% DEFINIZIONE VARIABILI VEICOLO
+% 
+%   for x = 1:10
+%       disp(x)
+%   end
+% 
 
 mass = 190; %massa del veicolo [kg]
 
