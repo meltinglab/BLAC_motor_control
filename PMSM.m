@@ -48,7 +48,7 @@ tm = 120; %coppia massima[Nm]
 nm = 2800; %velocità massima alla coppia massima[rpm]
 nc = nb*1.01; %velocità massima alla potenza base [rpm]
 
-motorspeed = linspace(0, 8000, 1000);
+motorspeed = linspace(0, 8000, 10000);
 
 %creo il vettore della coppia
 motortrq = zeros(1,length(motorspeed));
@@ -69,7 +69,7 @@ for i = 1:length(motorspeed)
     end
 end
 
-moterpwr = (motortrq.*motorspeed.*pi)/30;
+motorpwr = (motortrq.*motorspeed.*pi)/30;
 
 figure 
 subplot(2,1,1)
@@ -82,7 +82,7 @@ ylim([0 130])
 
 
 subplot(2,1,2)
-plot(motorspeed,moterpwr)
+plot(motorspeed,motorpwr)
 grid
 xlabel('Motor Speed [rmp]')
 ylabel('Motor Power [Nm]')
