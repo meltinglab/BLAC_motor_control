@@ -1,0 +1,5415 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script language="JavaScript" type="text/javascript" src="rtwshrink.js"></script><title>
+Static Code Metrics Report
+</title>
+
+</head>
+<body onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdCodeMetrics'); else local_onload();}} catch(err) {};">
+<h1>
+Static Code Metrics Report
+</h1>
+<div>
+<p>
+The static code metrics report provides statistics of the generated code. Metrics are estimated from static analysis of the generated code using the C data types specified in the 'Device details' section of the <b>Configuration Parameter > Hardware Implementation</b> pane: <b>char</b> 8, <b>short</b> 16, <b>int</b> 32, <b>long</b> 32, <b>float</b> 32, <b>double</b> 64, <b>pointer</b> 32 bits. If your model contains a Variant block, the Static Code Metrics Report does not contain data for the inactive variant. Actual object code metrics might differ due to target specific compiler and platform settings. Consult the <b>Code Generation Advisor</b><a name="MATLAB_link" style="text-decoration: none" href="matlab:helpview([docroot '/toolbox/ecoder/helptargets.map'], 'code_gen_advisor')">
+<img src="help.png" title="Open Code Generation Advisor help" style="border:none;cursor:pointer">
+
+</img>
+
+</a>
+ for options to improve code efficiency.
+</p>
+
+</div>
+<div>
+<h3>
+Table of Contents
+</h3>
+<ol>
+<li>
+<a href="#sec_File_Information" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdCodeMetrics_table_001_control'), 'rtwIdCodeMetrics_table_001')">
+File Information
+</a>
+
+</li>
+<li>
+<a href="#sec_Global_Variables" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdCodeMetrics_table_002_control'), 'rtwIdCodeMetrics_table_002')">
+Global Variables
+</a>
+
+</li>
+<li>
+<a href="#sec_Function_Information" onclick="rtwTableExpand(window.document, window.document.getElementById('rtwIdCodeMetrics_table_058_control'), 'rtwIdCodeMetrics_table_058')">
+Function Information
+</a>
+
+</li>
+
+</ol>
+
+</div>
+<h3 name="sec_File_Information" id="sec_File_Information">
+1. File Information <span title="Click to shrink or expand section" style="cursor:pointer;font-weight:normal;" id="rtwIdCodeMetrics_table_001_control" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'rtwIdCodeMetrics_table_001', false)"><span class="shrink-button">[<u>hide</u>]</span></span>
+</h3>
+<table width="100%" name="rtwIdCodeMetrics_table_001" id="rtwIdCodeMetrics_table_001" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" border="0">
+<tr>
+<td align="left" valign="top">
+<p>
+<span name="button_fileInfo_summary_table" id="button_fileInfo_summary_table" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'fileInfo_summary_table', true)"><span class="shrink-button">[-]</span></span> Summary
+</p>
+<table width="50%" cellpadding="0" name="fileInfo_summary_table" id="fileInfo_summary_table" border="0">
+<tr>
+<td width="4%" align="left" valign="top">
+<span style="white-space:nowrap" title="Number of source files excluding ert_main.c.">Number of .c files</span>
+</td>
+<td width="4%" align="left" valign="top">
+:
+</td>
+<td width="4%" align="right" valign="top">
+6
+</td>
+<td width="86%" align="right" valign="top">
+&#160;
+</td>
+
+</tr>
+<tr>
+<td width="4%" align="left" valign="top">
+<span style="white-space:nowrap" title="Number of header files.">Number of .h files</span>
+</td>
+<td width="4%" align="left" valign="top">
+:
+</td>
+<td width="4%" align="right" valign="top">
+16
+</td>
+<td width="86%" align="right" valign="top">
+&#160;
+</td>
+
+</tr>
+<tr>
+<td width="4%" align="left" valign="top">
+<span title="Lines of code excluding comments and blank lines">Lines of code</span>
+</td>
+<td width="4%" align="left" valign="top">
+:
+</td>
+<td width="4%" align="right" valign="top">
+2,320
+</td>
+<td width="86%" align="right" valign="top">
+&#160;
+</td>
+
+</tr>
+<tr>
+<td width="4%" align="left" valign="top">
+<span style="white-space:nowrap" title="Lines including source code, comments, and blank lines.">Lines</span>
+</td>
+<td width="4%" align="left" valign="top">
+:
+</td>
+<td width="4%" align="right" valign="top">
+3,570
+</td>
+<td width="86%" align="right" valign="top">
+&#160;
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<p>
+<span name="button_fileInfo_detail_table" id="button_fileInfo_detail_table" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'fileInfo_detail_table', true)"><span class="shrink-button">[-]</span></span> File details
+</p>
+<table width="100%" cellpadding="2" name="fileInfo_detail_table" id="fileInfo_detail_table" border="1">
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<b>
+<span style="white-space:nowrap" title="Files sorted in descending order by number of lines of code.">File Name</span>
+</b>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+<b>
+<span title="Lines of code excluding comments and blank lines.">Lines of Code</span>
+</b>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+<b>
+<span style="white-space:nowrap" title="Lines including source code, comments, and blank lines.">Lines</span>
+</b>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+<b>
+<span style="white-space:nowrap" title="Timestamp of the file">Generated On</span>
+</b>
+
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_c.html" class="code2code">
+pe_pmsm_drive_project.c
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+897
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+1,363
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_data_c.html" class="code2code">
+pe_pmsm_drive_project_data.c
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+624
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+683
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="rt_matrixlib_h.html" class="code2code">
+rt_matrixlib.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+283
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+361
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="rt_matrixlib_dbl_c.html" class="code2code">
+rt_matrixlib_dbl.c
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+109
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+127
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_h.html" class="code2code">
+pe_pmsm_drive_project.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+89
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+323
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="rt_lu_real_c.html" class="code2code">
+rt_lu_real.c
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+49
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+83
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="rtwtypes_h.html" class="code2code">
+rtwtypes.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+45
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+107
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="Platform_Types_h.html" class="code2code">
+Platform_Types.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+34
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+57
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+02/03/2018  9:10 PM
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="rt_forwardsubrr_dbl_c.html" class="code2code">
+rt_forwardsubrr_dbl.c
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+33
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+60
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="rt_backsubrr_dbl_c.html" class="code2code">
+rt_backsubrr_dbl.c
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+30
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+57
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="Rte_Type_h.html" class="code2code">
+Rte_Type.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+24
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+46
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_MemMap_h.html" class="code2code">
+pe_pmsm_drive_project_MemMap.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+24
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+42
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="rt_defines_h.html" class="code2code">
+rt_defines.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+18
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+59
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_private_h.html" class="code2code">
+pe_pmsm_drive_project_private.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+11
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+39
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="Compiler_h.html" class="code2code">
+Compiler.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+10
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+30
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+02/13/2018  2:14 PM
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_5df20146_1_gateway_h.html" class="code2code">
+pe_pmsm_drive_project_5df20146_1_gateway.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+10
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+20
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="ssc_ml_fun_h.html" class="code2code">
+ssc_ml_fun.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+9
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+20
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="Rte_pe_pmsm_drive_project_h.html" class="code2code">
+Rte_pe_pmsm_drive_project.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+8
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+23
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="Std_Types_h.html" class="code2code">
+Std_Types.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+6
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+25
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+02/13/2018 11:19 AM
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_types_h.html" class="code2code">
+pe_pmsm_drive_project_types.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+33
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_5df20146_1_ds_external_struct_h.html" class="code2code">
+pe_pmsm_drive_project_5df20146_1_ds_external_struct.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+3
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+8
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_5df20146_1_ds_externals_h.html" class="code2code">
+pe_pmsm_drive_project_5df20146_1_ds_externals.h
+</a>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+03/23/2019 12:15 AM
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+<h3 name="sec_Global_Variables" id="sec_Global_Variables">
+2. Global Variables <span title="Click to shrink or expand section" style="cursor:pointer;font-weight:normal;" id="rtwIdCodeMetrics_table_002_control" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'rtwIdCodeMetrics_table_002', false)"><span class="shrink-button">[<u>hide</u>]</span></span>
+</h3>
+<table width="100%" name="rtwIdCodeMetrics_table_002" id="rtwIdCodeMetrics_table_002" border="0">
+<tr>
+<td align="left" valign="top">
+Global variables defined in the generated code.
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="0" cellspacing="0" name="globalvarInfo_table" id="globalvarInfo_table" border="1">
+<tr style="background-color: #ffffff">
+<td width="100%" align="left" valign="top" style="border-style: none">
+<table class="treeTable" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<b>
+<span title="Global variables sorted by the maximum size in bytes.">Global Variable</span>
+</b>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+<b>
+<span title="Global variable size in bytes.">Size (bytes)</span>
+</b>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+<b>
+<span title="Total number of potential reads and writes for this global variable">Reads / Writes</span>
+</b>
+
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+<b>
+<span title="Maximum number of potential reads and writes in a function">Reads / Writes in a Function</span>
+</b>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap"><span name="button_globalvarInfo_table_sub3" id="button_globalvarInfo_table_sub3" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'globalvarInfo_table_sub3', true)"><span class="shrink-button">[+]</span></span> <a href="pe_pmsm_drive_project_c.html#var_rtDW" class="code2code">
+rtDW
+</a>
+</span>
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+1164
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+286<span style="font-family:Courier">&#160;</span>
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+254<span style="font-family:Courier">&#160;</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="globalvarInfo_table_sub3" id="globalvarInfo_table_sub3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_1_1_1</span></td>
+<td align="right" width="22.22%">32</td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; Switch1</span></td>
+<td align="right" width="22.22%">48</td>
+<td align="right" width="22.22%">13<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">13<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_2_1_1</span></td>
+<td align="right" width="22.22%">32</td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_3_1_1</span></td>
+<td align="right" width="22.22%">32</td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_4_1_1</span></td>
+<td align="right" width="22.22%">32</td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_5_1_1</span></td>
+<td align="right" width="22.22%">32</td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_6_1_1</span></td>
+<td align="right" width="22.22%">32</td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_7_1_1</span></td>
+<td align="right" width="22.22%">32</td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">19<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; STATE_1</span></td>
+<td align="right" width="22.22%">328</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_1_1_1_Discrete</span></td>
+<td align="right" width="22.22%">16</td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; Delay2_DSTATE</span></td>
+<td align="right" width="22.22%">16</td>
+<td align="right" width="22.22%">4<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">4<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; Delay1_DSTATE</span></td>
+<td align="right" width="22.22%">24</td>
+<td align="right" width="22.22%">9<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">9<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_2_1_1_Discrete</span></td>
+<td align="right" width="22.22%">16</td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_3_1_1_Discrete</span></td>
+<td align="right" width="22.22%">16</td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_4_1_1_Discrete</span></td>
+<td align="right" width="22.22%">16</td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_5_1_1_Discrete</span></td>
+<td align="right" width="22.22%">16</td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_6_1_1_Discrete</span></td>
+<td align="right" width="22.22%">16</td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; INPUT_7_1_1_Discrete</span></td>
+<td align="right" width="22.22%">16</td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; STATE_1_Discrete</span></td>
+<td align="right" width="22.22%">184</td>
+<td align="right" width="22.22%">3<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; UnaryMinus</span></td>
+<td align="right" width="22.22%">8</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; Initial</span></td>
+<td align="right" width="22.22%">8</td>
+<td align="right" width="22.22%">4<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">3<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; Delay_DSTATE</span></td>
+<td align="right" width="22.22%">8</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; UnitDelay2_DSTATE</span></td>
+<td align="right" width="22.22%">8</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; DiscreteTimeIntegrator1_DSTATE</span></td>
+<td align="right" width="22.22%">8</td>
+<td align="right" width="22.22%">12<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">11<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; UnitDelay_DSTATE</span></td>
+<td align="right" width="22.22%">8</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; DiscreteTimeIntegrator_DSTATE</span></td>
+<td align="right" width="22.22%">8</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; Delay_DSTATE_b</span></td>
+<td align="right" width="22.22%">8</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; UnitDelay_DSTATE_f</span></td>
+<td align="right" width="22.22%">8</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; DiscreteTimeIntegrator_DSTATE_l</span></td>
+<td align="right" width="22.22%">8</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; UnitDelay_DSTATE_k</span></td>
+<td align="right" width="22.22%">8</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; DiscreteTimeIntegrator_DSTATE_p</span></td>
+<td align="right" width="22.22%">8</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; OUTPUT_1_0_Discrete</span></td>
+<td align="right" width="22.22%">8</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">1<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; STATE_1_Modes</span></td>
+<td align="right" width="22.22%">72</td>
+<td align="right" width="22.22%">3<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; OUTPUT_1_0_Modes</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">1<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; STATE_1_Simulator</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">8<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">6<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; STATE_1_SimData</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">4<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; STATE_1_DiagMgr</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">3<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; STATE_1_ZcLogger</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; STATE_1_TsIndex</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; OUTPUT_1_0_Simulator</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">6<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">5<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; OUTPUT_1_0_SimData</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">3<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; OUTPUT_1_0_DiagMgr</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">4<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">3<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; OUTPUT_1_0_ZcLogger</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; OUTPUT_1_0_TsIndex</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; DiscreteTimeIntegrator1_PrevRes</span></td>
+<td align="right" width="22.22%">1</td>
+<td align="right" width="22.22%">3<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; DiscreteTimeIntegrator_PrevRese</span></td>
+<td align="right" width="22.22%">1</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">1<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; DiscreteTimeIntegrator_PrevRe_l</span></td>
+<td align="right" width="22.22%">1</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">1<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; DiscreteTimeIntegrator_PrevRe_d</span></td>
+<td align="right" width="22.22%">1</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">1<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; Initial_FirstOutputTime</span></td>
+<td align="right" width="22.22%">1</td>
+<td align="right" width="22.22%">3<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; STATE_1_FirstOutput</span></td>
+<td align="right" width="22.22%">1</td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; OUTPUT_1_0_FirstOutput</span></td>
+<td align="right" width="22.22%">1</td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; Relay_Mode</span></td>
+<td align="right" width="22.22%">1</td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">2<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap"><span name="button_globalvarInfo_table_sub56" id="button_globalvarInfo_table_sub56" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'globalvarInfo_table_sub56', true)"><span class="shrink-button">[+]</span></span> <a href="pe_pmsm_drive_project_c.html#var_rtM_" class="code2code">
+rtM_
+</a>
+</span>
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+16
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+<span title="The global variable is not directly used in any function.">0</span><span style="font-family:Courier">*</span>
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+<span title="The global variable is not directly used in any function.">0</span><span style="font-family:Courier">*</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="globalvarInfo_table_sub56" id="globalvarInfo_table_sub56" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;<span name="button_globalvarInfo_table_sub56_sub56" id="button_globalvarInfo_table_sub56_sub56" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'globalvarInfo_table_sub56_sub56', true)"><span class="shrink-button">[+]</span></span> Timing</span></td>
+<td align="right" width="22.22%">16</td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="globalvarInfo_table_sub56_sub56" id="globalvarInfo_table_sub56_sub56" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; clockTick0</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; clockTickH0</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #eeeeff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; clockTick1</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2"  style="background-color: #ffffff" >
+<tr><td align="left" width="33.33%"><span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160; clockTickH1</span></td>
+<td align="right" width="22.22%">4</td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+<td align="right" width="22.22%">0<span style="font-family:Courier">&#160;</span></td>
+</tr></table>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="33%" align="left" valign="top" style="border-style: none">
+<b>Total</b>
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+<b>1,180</b>
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+<b>286<span style="font-family:Courier">&#160;</span></b>
+</td>
+<td width="22%" align="right" valign="top" style="border-style: none">
+ 
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+* The global variable is not directly used in any function.
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+<h3 name="sec_Function_Information" id="sec_Function_Information">
+3. Function Information <span title="Click to shrink or expand section" style="cursor:pointer;font-weight:normal;" id="rtwIdCodeMetrics_table_058_control" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, 'rtwIdCodeMetrics_table_058', false)"><span class="shrink-button">[<u>hide</u>]</span></span>
+</h3>
+<table width="100%" name="rtwIdCodeMetrics_table_058" id="rtwIdCodeMetrics_table_058" border="0">
+<tr>
+<td align="left" valign="top">
+View function metrics in a call tree format or table format. Accumulated stack numbers include the estimated stack size of the function plus the maximum of the accumulated stack size of the subroutines that the function calls.
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="0" cellspacing="0" name="fcnInfo_calltree" id="fcnInfo_calltree" border="0">
+<tr>
+<td align="left" valign="top">
+View:Call Tree | <a href="javascript:if (rtwSwitchView) rtwSwitchView(window.document,'fcnInfo_calltree', 'fcnInfo_table')" title="List of functions in alphabetical order. The second column includes the callers of the functions.">
+Table
+</a>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="0" cellspacing="0" border="1">
+<tr style="background-color: #ffffff">
+<td width="100%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="0" cellspacing="0" class="treeTable" id="fcnTreeView" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<b>
+<span title="Function name sorted by the maximum accumulated stack size.">Function Name</span>
+</b>
+
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<b>
+<span title="Estimated stack size of the function plus the maximum of the accumulated stack size of its subroutines.">Accumulated Stack Size (bytes)</span>
+</b>
+
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<b>
+<span title="Size of local variables in the function.">Self Stack Size (bytes)</span>
+</b>
+
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<b>
+<span title="Lines of code excluding comments and blank lines.">Lines of Code</span>
+</b>
+
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<b>
+<span style="white-space:nowrap" title="Lines including source code, comments, and blank lines.">Lines</span>
+</b>
+
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<b>
+<span style="white-space:nowrap" title="Cyclomatic complexity">Complexity</span>
+</b>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="border-style: none" width="100%" cellpadding="0" cellspacing="0" name="" id="" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap"><span name="button_3" id="button_3" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, '3', true)"><span class="shrink-button">[+]</span></span>&#160;<b><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+</b></span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1,388
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1,328
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+509
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+796
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+32
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="3" id="3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="pe_pmsm_drive_project_c.html#fcn_look2_binlca" title="look2_binlca" class="code2code">
+look2_binlca
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+60
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+60
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+67
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+112
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+12
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="3" id="3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="pe_pmsm_drive_project_c.html#fcn_look2_binlc" title="look2_binlc" class="code2code">
+look2_binlc
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+52
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+52
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+54
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+96
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+9
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="3" id="3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="pe_pmsm_drive_project_c.html#fcn_look1_binlca" title="look1_binlca" class="code2code">
+look1_binlca
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+28
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+28
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+31
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+61
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="3" id="3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;<span name="button_7" id="button_7" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, '7', true)"><span class="shrink-button">[+]</span></span>&#160;<a href="pe_pmsm_drive_project_c.html#fcn_rt_modd" title="rt_modd" class="code2code">
+rt_modd
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+17
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+17
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+24
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+29
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="7" id="7" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+fmod
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="7" id="7" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+floor
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="7" id="7" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+fabs
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="3" id="3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;<span name="button_11" id="button_11" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, '11', true)"><span class="shrink-button">[+]</span></span>&#160;<a href="nesl_diag_h.html#fcn_rtw_diagnostics_msg" title="rtw_diagnostics_msg is a static function in nesl_diag.h." class="code2code">
+rtw_diagnostics_msg
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+12
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+12
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+19
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="11" id="11" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="nesl_diag_h.html#fcn_static_diagnostics_msg_buffer" title="static_diagnostics_msg_buffer is a static function in nesl_diag.h." class="code2code">
+static_diagnostics_msg_buffer
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+5
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="11" id="11" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+pm_default_allocator
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="11" id="11" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+neu_create_diagnostic_tree_printer
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="11" id="11" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+strncpy
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="3" id="3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+sin
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="3" id="3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+cos
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="3" id="3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+fabs
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="3" id="3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+sqrt
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="3" id="3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="nesl_diag_h.html#fcn_neu_diagnostic_manager_get_initial_tree" title="neu_diagnostic_manager_get_initial_tree is a static function in nesl_diag.h." class="code2code">
+neu_diagnostic_manager_get_initial_tree
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+6
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="3" id="3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="_nesl_rtw_h.html#fcn_ne_simulator_method" title="ne_simulator_method is a static function in _nesl_rtw.h." class="code2code">
+ne_simulator_method
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="3" id="3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="nesl_diag_h.html#fcn_error_buffer_is_empty" title="error_buffer_is_empty is a static function in nesl_diag.h." class="code2code">
+error_buffer_is_empty
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="3" id="3" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+memcpy
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="border-style: none" width="100%" cellpadding="0" cellspacing="0" name="" id="" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap"><span name="button_24" id="button_24" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, '24', true)"><span class="shrink-button">[+]</span></span>&#160;<b><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Init" title="Runnable_Init" class="code2code">
+Runnable_Init
+</a>
+</b></span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+189
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+177
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+175
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+200
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+11
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="24" id="24" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;<span name="button_25" id="button_25" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, '25', true)"><span class="shrink-button">[+]</span></span>&#160;<a href="nesl_sd_h.html#fcn_nesl_create_simulation_data" title="nesl_create_simulation_data is a static function in nesl_sd.h." class="code2code">
+nesl_create_simulation_data
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+12
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+12
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+15
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="25" id="25" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+pm_default_allocator
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="24" id="24" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;<span name="button_27" id="button_27" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, '27', true)"><span class="shrink-button">[+]</span></span>&#160;<a href="nesl_diag_h.html#fcn_rtw_diagnostics_msg" title="rtw_diagnostics_msg is a static function in nesl_diag.h." class="code2code">
+rtw_diagnostics_msg
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+12
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+12
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+19
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="27" id="27" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="nesl_diag_h.html#fcn_static_diagnostics_msg_buffer" title="static_diagnostics_msg_buffer is a static function in nesl_diag.h." class="code2code">
+static_diagnostics_msg_buffer
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+5
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="27" id="27" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+pm_default_allocator
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="27" id="27" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+neu_create_diagnostic_tree_printer
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="27" id="27" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+strncpy
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="24" id="24" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;<span name="button_32" id="button_32" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, '32', true)"><span class="shrink-button">[+]</span></span>&#160;<a href="nesl_rtw_utils_h.html#fcn_nesl_lease_simulator" title="nesl_lease_simulator is a static function in nesl_rtw_utils.h." class="code2code">
+nesl_lease_simulator
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+6
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="32" id="32" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+nesl_get_registry
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="24" id="24" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="nesl_rtw_utils_h.html#fcn_pointer_is_null" title="pointer_is_null is a static function in nesl_rtw_utils.h." class="code2code">
+pointer_is_null
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="24" id="24" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+pe_pmsm_drive_project_5df20146_1_gateway
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="24" id="24" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;<span name="button_36" id="button_36" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, '36', true)"><span class="shrink-button">[+]</span></span>&#160;<a href="nesl_diag_h.html#fcn_rtw_create_diagnostics" title="rtw_create_diagnostics is a static function in nesl_diag.h." class="code2code">
+rtw_create_diagnostics
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="36" id="36" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+pm_default_allocator
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="36" id="36" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+neu_create_diagnostic_manager
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="24" id="24" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="nesl_diag_h.html#fcn_neu_diagnostic_manager_get_initial_tree" title="neu_diagnostic_manager_get_initial_tree is a static function in nesl_diag.h." class="code2code">
+neu_diagnostic_manager_get_initial_tree
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+6
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="24" id="24" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="nesl_rtw_utils_h.html#fcn_nesl_initialize_simulator" title="nesl_initialize_simulator is a static function in nesl_rtw_utils.h." class="code2code">
+nesl_initialize_simulator
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+6
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="24" id="24" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="nesl_diag_h.html#fcn_error_buffer_is_empty" title="error_buffer_is_empty is a static function in nesl_diag.h." class="code2code">
+error_buffer_is_empty
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="24" id="24" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="nesl_rtw_utils_h.html#fcn_nesl_simulator_set_rtps" title="nesl_simulator_set_rtps is a static function in nesl_rtw_utils.h." class="code2code">
+nesl_simulator_set_rtps
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+5
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="24" id="24" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<a href="_nesl_rtw_h.html#fcn_ne_simulator_method" title="ne_simulator_method is a static function in _nesl_rtw.h." class="code2code">
+ne_simulator_method
+</a>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="border-style: none" width="100%" cellpadding="0" cellspacing="0" name="" id="" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap"><span name="button_44" id="button_44" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, '44', true)"><span class="shrink-button">[+]</span></span>&#160;<b><a href="rt_lu_real_c.html#fcn_rt_lu_real" title="rt_lu_real" class="code2code">
+rt_lu_real
+</a>
+</b></span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+72
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+72
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+42
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+64
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+11
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="44" id="44" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+fabs
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="border-style: none" width="100%" cellpadding="0" cellspacing="0" name="" id="" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<b><a href="rt_backsubrr_dbl_c.html#fcn_rt_BackwardSubstitutionRR_Dbl" title="rt_BackwardSubstitutionRR_Dbl" class="code2code">
+rt_BackwardSubstitutionRR_Dbl
+</a>
+</b></span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+32
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+32
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+21
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+31
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+5
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="border-style: none" width="100%" cellpadding="0" cellspacing="0" name="" id="" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<b><a href="rt_forwardsubrr_dbl_c.html#fcn_rt_ForwardSubstitutionRR_Dbl" title="rt_ForwardSubstitutionRR_Dbl" class="code2code">
+rt_ForwardSubstitutionRR_Dbl
+</a>
+</b></span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+32
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+32
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+23
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+35
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+5
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="border-style: none" width="100%" cellpadding="0" cellspacing="0" name="" id="" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap"><span name="button_48" id="button_48" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, '48', true)"><span class="shrink-button">[+]</span></span>&#160;<b><a href="nesl_la_h.html#fcn_populate_full_matrix_from_sparsitypattern" title="populate_full_matrix_from_sparsitypattern is a static function in nesl_la.h." class="code2code">
+populate_full_matrix_from_sparsitypattern
+</a>
+</b></span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+24
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+24
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+25
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+3
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="48" id="48" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+memset
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="border-style: none" width="100%" cellpadding="0" cellspacing="0" name="" id="" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap"><span name="button_50" id="button_50" title="Click to shrink or expand tree" style="cursor:pointer;font-family:monospace;font-weight:normal;" onclick ="if (rtwTableShrink) rtwTableShrink(window.document, this, '50', true)"><span class="shrink-button">[+]</span></span>&#160;<b><a href="rt_matrixlib_dbl_c.html#fcn_rt_Hypot_Dbl" title="rt_Hypot_Dbl" class="code2code">
+rt_Hypot_Dbl
+</a>
+</b></span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+16
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+16
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+18
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+22
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="50" id="50" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+fabs
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="display: none; border-style: none" width="100%" cellpadding="0" cellspacing="0" name="50" id="50" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<span>
+sqrt
+</span>
+</span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="border-style: none" width="100%" cellpadding="0" cellspacing="0" name="" id="" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<b><a href="_nesl_rtw_h.html#fcn_ne_get_num_io_signals" title="ne_get_num_io_signals is a static function in _nesl_rtw.h." class="code2code">
+ne_get_num_io_signals
+</a>
+</b></span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+8
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+8
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="border-style: none" width="100%" cellpadding="0" cellspacing="0" name="" id="" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<b><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step" title="Runnable_Step" class="code2code">
+Runnable_Step
+</a>
+</b></span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+6
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+25
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="border-style: none" width="100%" cellpadding="0" cellspacing="0" name="" id="" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<b><a href="nesl_la_h.html#fcn_rtw_linalg_create_data" title="rtw_linalg_create_data is a static function in nesl_la.h." class="code2code">
+rtw_linalg_create_data
+</a>
+</b></span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+27
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="border-style: none" width="100%" cellpadding="0" cellspacing="0" name="" id="" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #eeeeff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<b><a href="_nesl_rtw_h.html#fcn_nesl_get_sample_hits" title="nesl_get_sample_hits is a static function in _nesl_rtw.h." class="code2code">
+nesl_get_sample_hits
+</a>
+</b></span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+2
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table style="border-style: none" width="100%" cellpadding="0" cellspacing="0" name="" id="" border="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" border="0">
+<tr style="background-color: #ffffff">
+<td width="37%" align="left" valign="top" style="border-style: none">
+<span style="white-space:nowrap">&#160;<span style="font-family:monospace">&#160;&#160;</span>&#160;&#160;<b><a href="nesl_la_h.html#fcn_get_rtw_linear_algebra" title="get_rtw_linear_algebra is a static function in nesl_la.h." class="code2code">
+get_rtw_linear_algebra
+</a>
+</b></span>
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+8
+</td>
+<td width="12%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="0" cellspacing="0" name="fcnInfo_table" id="fcnInfo_table" style="display: none" border="0">
+<tr>
+<td align="left" valign="top">
+View: <a href="javascript:if (rtwSwitchView) rtwSwitchView(window.document,'fcnInfo_table', 'fcnInfo_calltree')" title="Browse call graph in a call tree format.">
+Call Tree
+</a>
+ | Table
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<table width="100%" cellpadding="2" class="treeTable" id="fcnTableView" border="1">
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<b>
+<span title="Function name sorted alphabetically">Function Name</span>
+</b>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<b>
+<span title="List of functions calling the function in the corresponding first column. The number of call sites is included in parentheses.">Called By (number of call sites)</span>
+</b>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<b>
+<span title="Estimated stack size of the function plus the maximum of the accumulated stack size of its subroutines.">Accumulated Stack Size (bytes)</span>
+</b>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<b>
+<span title="Size of local variables in the function.">Self Stack Size (bytes)</span>
+</b>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<b>
+<span title="Lines of code excluding comments and blank lines.">Lines of Code</span>
+</b>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<b>
+<span style="white-space:nowrap" title="Lines including source code, comments, and blank lines.">Lines</span>
+</b>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<b>
+<span style="white-space:nowrap" title="Cyclomatic complexity">Complexity</span>
+</b>
+
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Init" title="Runnable_Init" class="code2code">
+Runnable_Init
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+&#160;
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+189
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+177
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+175
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+200
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+11
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step" title="Runnable_Step" class="code2code">
+Runnable_Step
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+&#160;
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+6
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+25
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+&#160;
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1388
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1328
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+509
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+796
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+32
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="_nesl_rtw_h.html#fcn_ne_get_num_io_signals" title="ne_get_num_io_signals is a static function in _nesl_rtw.h." class="code2code">
+ne_get_num_io_signals
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+&#160;
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+8
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+8
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="_nesl_rtw_h.html#fcn_ne_simulator_method" title="ne_simulator_method is a static function in _nesl_rtw.h." class="code2code">
+ne_simulator_method
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Init has 2 call sites of _nesl_rtw.h:ne_simulator_method."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Init" title="Runnable_Init" class="code2code">
+Runnable_Init
+</a>
+ (2)</span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Step1 has 3 call sites of _nesl_rtw.h:ne_simulator_method."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+ (3)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="_nesl_rtw_h.html#fcn_nesl_get_sample_hits" title="nesl_get_sample_hits is a static function in _nesl_rtw.h." class="code2code">
+nesl_get_sample_hits
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+&#160;
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+2
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+cos
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Step1 has 3 call sites of cos."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+ (3)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+fabs
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Step1 has one call site of fabs."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+</span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="rt_modd has 2 call sites of fabs."><a href="pe_pmsm_drive_project_c.html#fcn_rt_modd" title="rt_modd" class="code2code">
+rt_modd
+</a>
+ (2)</span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="rt_lu_real has 2 call sites of fabs."><a href="rt_lu_real_c.html#fcn_rt_lu_real" title="rt_lu_real" class="code2code">
+rt_lu_real
+</a>
+ (2)</span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="rt_Hypot_Dbl has 4 call sites of fabs."><a href="rt_matrixlib_dbl_c.html#fcn_rt_Hypot_Dbl" title="rt_Hypot_Dbl" class="code2code">
+rt_Hypot_Dbl
+</a>
+ (4)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+floor
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="rt_modd has 2 call sites of floor."><a href="pe_pmsm_drive_project_c.html#fcn_rt_modd" title="rt_modd" class="code2code">
+rt_modd
+</a>
+ (2)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+fmod
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="rt_modd has one call site of fmod."><a href="pe_pmsm_drive_project_c.html#fcn_rt_modd" title="rt_modd" class="code2code">
+rt_modd
+</a>
+</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_c.html#fcn_look1_binlca" title="look1_binlca" class="code2code">
+look1_binlca
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Step1 has one call site of look1_binlca."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+28
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+28
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+31
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+61
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_c.html#fcn_look2_binlc" title="look2_binlc" class="code2code">
+look2_binlc
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Step1 has 2 call sites of look2_binlc."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+ (2)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+52
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+52
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+54
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+96
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+9
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_c.html#fcn_look2_binlca" title="look2_binlca" class="code2code">
+look2_binlca
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Step1 has one call site of look2_binlca."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+60
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+60
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+67
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+112
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+12
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+memcpy
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Step1 has one call site of memcpy."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+memset
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="nesl_la.h:populate_full_matrix_from_sparsitypattern has one call site of memset."><a href="nesl_la_h.html#fcn_populate_full_matrix_from_sparsitypattern" title="populate_full_matrix_from_sparsitypattern is a static function in nesl_la.h." class="code2code">
+populate_full_matrix_from_sparsitypattern
+</a>
+</span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="nesl_la.h:populate_full_matrix_from_sparsitypattern has one call site of memset."><a href="nesl_la_h.html#fcn_populate_full_matrix_from_sparsitypattern" title="populate_full_matrix_from_sparsitypattern is a static function in nesl_la.h." class="code2code">
+populate_full_matrix_from_sparsitypattern
+</a>
+</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="nesl_diag_h.html#fcn_error_buffer_is_empty" title="error_buffer_is_empty is a static function in nesl_diag.h." class="code2code">
+error_buffer_is_empty
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Init has 4 call sites of nesl_diag.h:error_buffer_is_empty."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Init" title="Runnable_Init" class="code2code">
+Runnable_Init
+</a>
+ (4)</span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Step1 has 3 call sites of nesl_diag.h:error_buffer_is_empty."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+ (3)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="nesl_diag_h.html#fcn_neu_diagnostic_manager_get_initial_tree" title="neu_diagnostic_manager_get_initial_tree is a static function in nesl_diag.h." class="code2code">
+neu_diagnostic_manager_get_initial_tree
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Init has 4 call sites of nesl_diag.h:neu_diagnostic_manager_get_initial_tree."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Init" title="Runnable_Init" class="code2code">
+Runnable_Init
+</a>
+ (4)</span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Step1 has 3 call sites of nesl_diag.h:neu_diagnostic_manager_get_initial_tree."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+ (3)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+6
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="nesl_diag_h.html#fcn_rtw_create_diagnostics" title="rtw_create_diagnostics is a static function in nesl_diag.h." class="code2code">
+rtw_create_diagnostics
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Init has 2 call sites of nesl_diag.h:rtw_create_diagnostics."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Init" title="Runnable_Init" class="code2code">
+Runnable_Init
+</a>
+ (2)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="nesl_diag_h.html#fcn_rtw_diagnostics_msg" title="rtw_diagnostics_msg is a static function in nesl_diag.h." class="code2code">
+rtw_diagnostics_msg
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Init has 4 call sites of nesl_diag.h:rtw_diagnostics_msg."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Init" title="Runnable_Init" class="code2code">
+Runnable_Init
+</a>
+ (4)</span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Step1 has 3 call sites of nesl_diag.h:rtw_diagnostics_msg."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+ (3)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+12
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+12
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+19
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="nesl_diag_h.html#fcn_static_diagnostics_msg_buffer" title="static_diagnostics_msg_buffer is a static function in nesl_diag.h." class="code2code">
+static_diagnostics_msg_buffer
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="nesl_diag.h:rtw_diagnostics_msg has one call site of nesl_diag.h:static_diagnostics_msg_buffer."><a href="nesl_diag_h.html#fcn_rtw_diagnostics_msg" title="rtw_diagnostics_msg is a static function in nesl_diag.h." class="code2code">
+rtw_diagnostics_msg
+</a>
+</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+5
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+nesl_get_registry
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="nesl_rtw_utils.h:nesl_lease_simulator has one call site of nesl_get_registry."><a href="nesl_rtw_utils_h.html#fcn_nesl_lease_simulator" title="nesl_lease_simulator is a static function in nesl_rtw_utils.h." class="code2code">
+nesl_lease_simulator
+</a>
+</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="nesl_la_h.html#fcn_get_rtw_linear_algebra" title="get_rtw_linear_algebra is a static function in nesl_la.h." class="code2code">
+get_rtw_linear_algebra
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+&#160;
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+8
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="nesl_la_h.html#fcn_populate_full_matrix_from_sparsitypattern" title="populate_full_matrix_from_sparsitypattern is a static function in nesl_la.h." class="code2code">
+populate_full_matrix_from_sparsitypattern
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+&#160;
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+24
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+24
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+25
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+3
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="nesl_la_h.html#fcn_rtw_linalg_create_data" title="rtw_linalg_create_data is a static function in nesl_la.h." class="code2code">
+rtw_linalg_create_data
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+&#160;
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+27
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+2
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="nesl_rtw_utils_h.html#fcn_nesl_initialize_simulator" title="nesl_initialize_simulator is a static function in nesl_rtw_utils.h." class="code2code">
+nesl_initialize_simulator
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Init has 2 call sites of nesl_rtw_utils.h:nesl_initialize_simulator."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Init" title="Runnable_Init" class="code2code">
+Runnable_Init
+</a>
+ (2)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+6
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="nesl_rtw_utils_h.html#fcn_nesl_lease_simulator" title="nesl_lease_simulator is a static function in nesl_rtw_utils.h." class="code2code">
+nesl_lease_simulator
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Init has 4 call sites of nesl_rtw_utils.h:nesl_lease_simulator."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Init" title="Runnable_Init" class="code2code">
+Runnable_Init
+</a>
+ (4)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+6
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="nesl_rtw_utils_h.html#fcn_nesl_simulator_set_rtps" title="nesl_simulator_set_rtps is a static function in nesl_rtw_utils.h." class="code2code">
+nesl_simulator_set_rtps
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Init has one call site of nesl_rtw_utils.h:nesl_simulator_set_rtps."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Init" title="Runnable_Init" class="code2code">
+Runnable_Init
+</a>
+</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+5
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="nesl_rtw_utils_h.html#fcn_pointer_is_null" title="pointer_is_null is a static function in nesl_rtw_utils.h." class="code2code">
+pointer_is_null
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Init has 2 call sites of nesl_rtw_utils.h:pointer_is_null."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Init" title="Runnable_Init" class="code2code">
+Runnable_Init
+</a>
+ (2)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+4
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="nesl_sd_h.html#fcn_nesl_create_simulation_data" title="nesl_create_simulation_data is a static function in nesl_sd.h." class="code2code">
+nesl_create_simulation_data
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Init has 2 call sites of nesl_sd.h:nesl_create_simulation_data."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Init" title="Runnable_Init" class="code2code">
+Runnable_Init
+</a>
+ (2)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+12
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+12
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+0
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+15
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+neu_create_diagnostic_manager
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="nesl_diag.h:rtw_create_diagnostics has one call site of neu_create_diagnostic_manager."><a href="nesl_diag_h.html#fcn_rtw_create_diagnostics" title="rtw_create_diagnostics is a static function in nesl_diag.h." class="code2code">
+rtw_create_diagnostics
+</a>
+</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+neu_create_diagnostic_tree_printer
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="nesl_diag.h:rtw_diagnostics_msg has one call site of neu_create_diagnostic_tree_printer."><a href="nesl_diag_h.html#fcn_rtw_diagnostics_msg" title="rtw_diagnostics_msg is a static function in nesl_diag.h." class="code2code">
+rtw_diagnostics_msg
+</a>
+</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+pe_pmsm_drive_project_5df20146_1_gateway
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Init has 2 call sites of pe_pmsm_drive_project_5df20146_1_gateway."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Init" title="Runnable_Init" class="code2code">
+Runnable_Init
+</a>
+ (2)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+pm_default_allocator
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="nesl_sd.h:nesl_create_simulation_data has one call site of pm_default_allocator."><a href="nesl_sd_h.html#fcn_nesl_create_simulation_data" title="nesl_create_simulation_data is a static function in nesl_sd.h." class="code2code">
+nesl_create_simulation_data
+</a>
+</span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="nesl_diag.h:rtw_diagnostics_msg has one call site of pm_default_allocator."><a href="nesl_diag_h.html#fcn_rtw_diagnostics_msg" title="rtw_diagnostics_msg is a static function in nesl_diag.h." class="code2code">
+rtw_diagnostics_msg
+</a>
+</span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="nesl_diag.h:rtw_create_diagnostics has one call site of pm_default_allocator."><a href="nesl_diag_h.html#fcn_rtw_create_diagnostics" title="rtw_create_diagnostics is a static function in nesl_diag.h." class="code2code">
+rtw_create_diagnostics
+</a>
+</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="rt_backsubrr_dbl_c.html#fcn_rt_BackwardSubstitutionRR_Dbl" title="rt_BackwardSubstitutionRR_Dbl" class="code2code">
+rt_BackwardSubstitutionRR_Dbl
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+&#160;
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+32
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+32
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+21
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+31
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+5
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="rt_forwardsubrr_dbl_c.html#fcn_rt_ForwardSubstitutionRR_Dbl" title="rt_ForwardSubstitutionRR_Dbl" class="code2code">
+rt_ForwardSubstitutionRR_Dbl
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+&#160;
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+32
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+32
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+23
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+35
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+5
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="rt_matrixlib_dbl_c.html#fcn_rt_Hypot_Dbl" title="rt_Hypot_Dbl" class="code2code">
+rt_Hypot_Dbl
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+&#160;
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+16
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+16
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+18
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+22
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+4
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="rt_lu_real_c.html#fcn_rt_lu_real" title="rt_lu_real" class="code2code">
+rt_lu_real
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+&#160;
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+72
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+72
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+42
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+64
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+11
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+<a href="pe_pmsm_drive_project_c.html#fcn_rt_modd" title="rt_modd" class="code2code">
+rt_modd
+</a>
+
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Step1 has one call site of rt_modd."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+17
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+17
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+24
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+29
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+sin
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Step1 has 3 call sites of sin."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+ (3)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+sqrt
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="Runnable_Step1 has one call site of sqrt."><a href="pe_pmsm_drive_project_c.html#fcn_Runnable_Step1" title="Runnable_Step1" class="code2code">
+Runnable_Step1
+</a>
+</span>
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="rt_Hypot_Dbl has 2 call sites of sqrt."><a href="rt_matrixlib_dbl_c.html#fcn_rt_Hypot_Dbl" title="rt_Hypot_Dbl" class="code2code">
+rt_Hypot_Dbl
+</a>
+ (2)</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td width="22%" align="left" valign="top" style="border-style: none">
+strncpy
+</td>
+<td width="22%" align="left" valign="top" style="border-style: none">
+<table width="100%" cellpadding="1" cellspacing="0" border="0">
+<tr>
+<td align="left" valign="top">
+<span style="white-space:nowrap" title="nesl_diag.h:rtw_diagnostics_msg has one call site of strncpy."><a href="nesl_diag_h.html#fcn_rtw_diagnostics_msg" title="rtw_diagnostics_msg is a static function in nesl_diag.h." class="code2code">
+rtw_diagnostics_msg
+</a>
+</span>
+</td>
+
+</tr>
+
+</table>
+
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+<i title="Definition of this function is not found.">Not available</i>
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+<td width="11%" align="right" valign="top" style="border-style: none">
+-
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>

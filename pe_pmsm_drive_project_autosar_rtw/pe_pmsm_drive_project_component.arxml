@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model pe_pmsm_drive_project
+Model version                : 1.142
+Simulink Coder version       : Simulink Coder 9.0 (R2018b) 24-May-2018
+XML source code generated on : Sat Mar 23 00:31:02 2019
+Model Checksum               : 3163894198 890542233 2035210945 787218297
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>pe_pmsm_drive_project_pkg</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>pe_pmsm_drive_project_swc</SHORT-NAME>
+                    <ELEMENTS>
+                        <APPLICATION-SW-COMPONENT-TYPE UUID="c6f30fdf-682e-5080-d4c1-28da4ede5f4b">
+                            <SHORT-NAME>pe_pmsm_drive_project</SHORT-NAME>
+                            <INTERNAL-BEHAVIORS>
+                                <SWC-INTERNAL-BEHAVIOR UUID="9e11950b-c8d9-5b38-27b1-0988a70b62d1">
+                                    <SHORT-NAME>pe_pmsm_drive_project</SHORT-NAME>
+                                    <EVENTS>
+                                        <TIMING-EVENT UUID="66c21f14-7076-593e-4a22-7a31f3027b5e">
+                                            <SHORT-NAME>Event_Runnable_Step</SHORT-NAME>
+                                            <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/pe_pmsm_drive_project_pkg/pe_pmsm_drive_project_swc/pe_pmsm_drive_project/pe_pmsm_drive_project/Runnable_Step</START-ON-EVENT-REF>
+                                            <PERIOD>2.0E-07</PERIOD>
+                                        </TIMING-EVENT>
+                                        <TIMING-EVENT UUID="06b0d46c-1a98-59d5-0d27-584b2b208093">
+                                            <SHORT-NAME>Event_Runnable_Step1</SHORT-NAME>
+                                            <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/pe_pmsm_drive_project_pkg/pe_pmsm_drive_project_swc/pe_pmsm_drive_project/pe_pmsm_drive_project/Runnable_Step1</START-ON-EVENT-REF>
+                                            <PERIOD>2.0E-06</PERIOD>
+                                        </TIMING-EVENT>
+                                    </EVENTS>
+                                    <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                                    <RUNNABLES>
+                                        <RUNNABLE-ENTITY UUID="b55a68f4-64ee-5f84-96e9-c39f42fce3b7">
+                                            <SHORT-NAME>Runnable_Init</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <SYMBOL>Runnable_Init</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                        <RUNNABLE-ENTITY UUID="433e4b09-08da-5b7c-20e5-6fa0e9f87395">
+                                            <SHORT-NAME>Runnable_Step</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <SYMBOL>Runnable_Step</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                        <RUNNABLE-ENTITY UUID="46a60495-ebcc-5648-ac5b-eb59cc2af8c7">
+                                            <SHORT-NAME>Runnable_Step1</SHORT-NAME>
+                                            <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                            <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                            <SYMBOL>Runnable_Step1</SYMBOL>
+                                        </RUNNABLE-ENTITY>
+                                    </RUNNABLES>
+                                    <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                                </SWC-INTERNAL-BEHAVIOR>
+                            </INTERNAL-BEHAVIORS>
+                        </APPLICATION-SW-COMPONENT-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

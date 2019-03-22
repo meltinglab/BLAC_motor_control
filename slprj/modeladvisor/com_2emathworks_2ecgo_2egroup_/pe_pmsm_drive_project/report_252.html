@@ -672,7 +672,7 @@ Simulink version: <font color="#800000">9.2</font>
 </td>
 <td align="right" valign="top">
 <b>
-Model version: <font color="#800000">1.138</font>
+Model version: <font color="#800000">1.142</font>
 </b>
 
 </td>
@@ -687,7 +687,7 @@ System: <font color="#800000">pe_pmsm_drive_project</font>
 </td>
 <td align="right" valign="top">
 <b>
-Current run: <font color="#800000">20-Mar-2019 18:16:18</font>
+Current run: <font color="#800000">23-Mar-2019 00:05:01</font>
 </b>
 
 </td>
@@ -756,7 +756,7 @@ Total
 Check model configuration settings against code generation objectives</span>
 <!-- mdladv_ignore_start --><!-- mdladv_ignore_finish --><!-- mdladv_ignore_start --><!-- mdladv_ignore_finish --></div>
 <!-- mdladv_ignore_start --><div class="subsection"><!-- mdladv_ignore_finish --><p /><p /><p>
-<br /><b>Current Objectives:</b> <font color="#0000FF">Debugging</font><br> The code generation objectives differ from the objectives set in the model (Unspecified). Click the 'Modify Parameters' button to store the current objectives in the model.<br><br>The following parameter values are not optimized for the selected objectives.<br><br>To automatically fix the warning, click the 'Modify Parameters' button and then rerun the check. To manually fix the warning, click the parameter hyperlink to open the Configuration Parameters dialog box, and manually apply the recommended value.<table class="AdvTable" border="1">
+<br /><b>Current Objectives:</b> <font color="#0000FF">Execution efficiency, RAM efficiency</font><br><br><br>The following parameter values are not optimized for the selected objectives.<br><br>To automatically fix the warning, click the 'Modify Parameters' button and then rerun the check. To manually fix the warning, click the parameter hyperlink to open the Configuration Parameters dialog box, and manually apply the recommended value.<table class="AdvTable" border="1">
 <tr>
 <th align="left" valign="top">
 <b>
@@ -780,7 +780,7 @@ Recommended Value
 </tr>
 <tr>
 <td align="left" valign="top">
-<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project OptimizeBlockIOStorage"> Signal storage reuse</a>
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project SupportNonInlinedSFcns"> non-inlined S-functions</a>
 </td>
 <td align="left" valign="top">
 on
@@ -792,7 +792,7 @@ off
 </tr>
 <tr>
 <td align="left" valign="top">
-<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project MATLABSourceComments"> MATLAB source code as comments</a>
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project SuppressErrorStatus"> Remove error status field in real-time model data structure</a>
 </td>
 <td align="left" valign="top">
 off
@@ -804,37 +804,25 @@ on
 </tr>
 <tr>
 <td align="left" valign="top">
-<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project ForceParamTrailComments"> Verbose comments for 'Model default' storage class</a>
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project SupportNonFinite"> non-finite numbers</a>
+</td>
+<td align="left" valign="top">
+on
+</td>
+<td align="left" valign="top">
+off
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project UseSpecifiedMinMax"> Optimize using the specified minimum and maximum values</a>
 </td>
 <td align="left" valign="top">
 off
 </td>
 <td align="left" valign="top">
 on
-</td>
-
-</tr>
-<tr>
-<td align="left" valign="top">
-<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project ShowEliminatedStatement"> Show eliminated blocks</a>
-</td>
-<td align="left" valign="top">
-off
-</td>
-<td align="left" valign="top">
-on
-</td>
-
-</tr>
-<tr>
-<td align="left" valign="top">
-<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project MergeDetectMultiDrivingBlocksExec"> Detect multiple driving blocks executing at the same time step</a>
-</td>
-<td align="left" valign="top">
-none
-</td>
-<td align="left" valign="top">
-error
 </td>
 
 </tr>
@@ -846,7 +834,7 @@ error
 Faster Builds
 </td>
 <td align="left" valign="top">
-Debug
+Faster Runs
 </td>
 
 </tr>
