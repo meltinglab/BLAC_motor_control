@@ -672,7 +672,7 @@ Simulink version: <font color="#800000">9.2</font>
 </td>
 <td align="right" valign="top">
 <b>
-Model version: <font color="#800000">1.142</font>
+Model version: <font color="#800000">1.143</font>
 </b>
 
 </td>
@@ -687,7 +687,7 @@ System: <font color="#800000">pe_pmsm_drive_project</font>
 </td>
 <td align="right" valign="top">
 <b>
-Current run: <font color="#800000">23-Mar-2019 00:05:01</font>
+Current run: <font color="#800000">23-Mar-2019 17:59:50</font>
 </b>
 
 </td>
@@ -756,7 +756,7 @@ Total
 Check model configuration settings against code generation objectives</span>
 <!-- mdladv_ignore_start --><!-- mdladv_ignore_finish --><!-- mdladv_ignore_start --><!-- mdladv_ignore_finish --></div>
 <!-- mdladv_ignore_start --><div class="subsection"><!-- mdladv_ignore_finish --><p /><p /><p>
-<br /><b>Current Objectives:</b> <font color="#0000FF">Execution efficiency, RAM efficiency</font><br><br><br>The following parameter values are not optimized for the selected objectives.<br><br>To automatically fix the warning, click the 'Modify Parameters' button and then rerun the check. To manually fix the warning, click the parameter hyperlink to open the Configuration Parameters dialog box, and manually apply the recommended value.<table class="AdvTable" border="1">
+<br /><b>Current Objectives:</b> <font color="#0000FF">Execution efficiency, RAM efficiency, MISRA C:2012 guidelines</font><br> The code generation objectives differ from the objectives set in the model (Unspecified). Click the 'Modify Parameters' button to store the current objectives in the model.<br><br>The following parameter values are not optimized for the selected objectives.<br><br>To automatically fix the warning, click the 'Modify Parameters' button and then rerun the check. To manually fix the warning, click the parameter hyperlink to open the Configuration Parameters dialog box, and manually apply the recommended value.<table class="AdvTable SystemdefinedCollapse" border="1" id="6e19598d-c718-4424-b07c-fd30a777a673" dataCollapse="off">
 <tr>
 <th align="left" valign="top">
 <b>
@@ -776,42 +776,6 @@ Recommended Value
 </b>
 
 </th>
-
-</tr>
-<tr>
-<td align="left" valign="top">
-<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project SupportNonInlinedSFcns"> non-inlined S-functions</a>
-</td>
-<td align="left" valign="top">
-on
-</td>
-<td align="left" valign="top">
-off
-</td>
-
-</tr>
-<tr>
-<td align="left" valign="top">
-<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project SuppressErrorStatus"> Remove error status field in real-time model data structure</a>
-</td>
-<td align="left" valign="top">
-off
-</td>
-<td align="left" valign="top">
-on
-</td>
-
-</tr>
-<tr>
-<td align="left" valign="top">
-<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project SupportNonFinite"> non-finite numbers</a>
-</td>
-<td align="left" valign="top">
-on
-</td>
-<td align="left" valign="top">
-off
-</td>
 
 </tr>
 <tr>
@@ -838,9 +802,144 @@ Faster Runs
 </td>
 
 </tr>
+<tr>
+<td align="left" valign="top">
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project AssertControl"> Model Verification block enabling</a>
+</td>
+<td align="left" valign="top">
+UseLocalSettings
+</td>
+<td align="left" valign="top">
+DisableAll
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project ParenthesesLevel"> Parentheses level</a>
+</td>
+<td align="left" valign="top">
+Nominal
+</td>
+<td align="left" valign="top">
+Maximum
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project EnableSignedLeftShifts"> Replace multiplications by powers of two with signed bitwise shifts</a>
+</td>
+<td align="left" valign="top">
+on
+</td>
+<td align="left" valign="top">
+off
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project EnableSignedRightShifts"> Allow right shifts on signed integers</a>
+</td>
+<td align="left" valign="top">
+on
+</td>
+<td align="left" valign="top">
+off
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project CastingMode"> Casting modes</a>
+</td>
+<td align="left" valign="top">
+Nominal
+</td>
+<td align="left" valign="top">
+Standards
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project UtilityFuncGeneration"> Shared code placement</a>
+</td>
+<td align="left" valign="top">
+Auto
+</td>
+<td align="left" valign="top">
+Shared location
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project IntegerOverflowMsg"> Wrap on overflow</a>
+</td>
+<td align="left" valign="top">
+warning
+</td>
+<td align="left" valign="top">
+error
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project SignalInfNanChecking"> Inf or NaN block output</a>
+</td>
+<td align="left" valign="top">
+none
+</td>
+<td align="left" valign="top">
+error
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project SFUndirectedBroadcastEventsDiag"> Undirected event broadcasts</a>
+</td>
+<td align="left" valign="top">
+warning
+</td>
+<td align="left" valign="top">
+error
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project CompileTimeRecursionLimit"> Compile-time recursion limit for MATLAB functions</a>
+</td>
+<td align="left" valign="top">
+50
+</td>
+<td align="left" valign="top">
+0
+</td>
+
+</tr>
+<tr>
+<td align="left" valign="top">
+<a href="matlab: modeladvisorprivate openCSAndHighlight pe_pmsm_drive_project EnableRuntimeRecursion"> Enable run-time recursion for MATLAB functions</a>
+</td>
+<td align="left" valign="top">
+on
+</td>
+<td align="left" valign="top">
+off
+</td>
+
+</tr>
 
 </table>
-<br /><br />_________________________________________________________________________________________
+<span class="SDCollapseControl" onclick="collapseSD(this, '6e19598d-c718-4424-b07c-fd30a777a673')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br /><br /><br />_________________________________________________________________________________________
 </p>
 <!-- mdladv_ignore_start --></div><!-- mdladv_ignore_finish --><!-- mdladv_ignore_start --></div><!-- mdladv_ignore_finish -->
 <span name = "EmbedImages" id="EmbedImages"></span><!-- mdladv_ignore_start -->

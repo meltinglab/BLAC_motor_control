@@ -45,10 +45,10 @@ pb = 1500; %potenza base [W]
 nb = 1400; %velocità base [rpm]
 tb = pb/(nb*pi/30); %coppia base [Nm]
 tm = 12; %coppia massima[Nm]
-nm = 800; %velocità massima alla coppia massima[rpm]
+nm = 600; %velocità massima alla coppia massima[rpm]
 nc = nb*1.01; %velocità massima alla potenza base [rpm]
-Pmax = 1500;
-Tmax = 12;
+Pmax = [0 1500];
+Tmax = [0 12];
 
 motorspeed = linspace(0, 8000, 10000);
 
