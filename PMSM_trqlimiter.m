@@ -41,16 +41,16 @@ xlim([0 220])
 
 %% DEFINIZIONE CURVA CARATTERISTICA MOTORE
 
-pb = 1500; %potenza base [W]
-nb = 1400; %velocità base [rpm]
+pb = 2800; %potenza base [W]
+nb = 2300; %velocità base [rpm]
 tb = pb/(nb*pi/30); %coppia base [Nm]
-tm = 12; %coppia massima[Nm]
-nm = 600; %velocità massima alla coppia massima[rpm]
+tm = 27; %coppia massima[Nm]
+nm = 2000; %velocità massima alla coppia massima[rpm]
 nc = nb*1.01; %velocità massima alla potenza base [rpm]
-Pmax = [0 1500];
-Tmax = [0 12];
+Pmax = 4200;
+Tmax = 27;
 
-motorspeed = linspace(0, 8000, 10000);
+motorspeed = linspace(0, 6000, 10000);
 
 %creo il vettore della coppia
 motortrq = zeros(1,length(motorspeed));
@@ -80,7 +80,7 @@ grid
 xlabel('Motor Speed [rmp]')
 ylabel('Motor Torque [Nm]')
 title('Torque Curve')
-ylim([0 130])
+ylim([0 30])
 
 
 subplot(2,1,2)
