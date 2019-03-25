@@ -37,7 +37,7 @@ tb = pb/(nb*pi/30); %base torque [Nm]
 tm = 120; %maximum torque[Nm]
 nm = 3500; %maximum speed at maximum torque[rpm]
 nc = nb*1.01; %maximum speed at base power [rpm]
-Pmax = 135000;
+Pmax = 13500;
 Tmax = 120;
 
 motorspeed = linspace(0, 8000, 10000);
