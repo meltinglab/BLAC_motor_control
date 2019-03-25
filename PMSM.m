@@ -1,25 +1,15 @@
-%% DEFINIZIONE VARIABILI VEICOLO
-% 
-%   for x = 1:10
-%       disp(x)
-%   end
-% 
-
-mass = 190; %massa del veicolo [kg]
-
+%% DEFINITION VEHICLE VARIABLE
+mass = 1725; %curb weight [kg]
 cd = 0.5; %draf
-frontarea = 0.5; %area frontale [m^2]
-airdens = 1.024; %densità dell'aria [kg/m^3]
+frontarea = 2.4; %front area [m^2]
+airdens = 1.225; %air density [kg/m^2]
+gr = 7.73; %gear ratio
+wheelrad = 0.317; %wheel radius [m]
+%% EVALUATION OF THE VEHICLE AERODYNAMIC FORCE
+speed = linspace(0, 60, 1000); %speed range [0:0.1:60]
 
-rt = 3; %rapporto di trasmissione
-wheelrad = 0.3; %raggio ruota [m]
-
-%% CALCOLO DELLE FORZE RESISTENTI VEICOLO
-
-speed = linspace(0, 60, 1000); %range di velocità [0:0.1:60]
-
-faero = 0.5*cd*frontarea*airdens.*speed.^2; %forza aerodinamica [N]
-paero = (faero.*speed)/1000; %potenza aerodinamica [kW]
+faero = 0.5*cd*frontarea*airdens.*speed.^2; %aerodynamic force [N]
+paero = (faero.*speed)/1000; %aerodynamic power [kW]
 
 speedkmh = 3.6.*speed;
 
@@ -30,7 +20,7 @@ plot(speedkmh, faero)
 grid on
 xlabel('Speed [km/h]')
 ylabel('Aerodynamic Force [N]')
-title('Load force and power UBM18')
+title('Load force and power')
 
 hold on 
 yyaxis right
@@ -39,20 +29,20 @@ ylabel('Aerodynaminc Power [kW]')
 legend('Force', 'Power')
 xlim([0 220])
 
-%% DEFINIZIONE CURVA CARATTERISTICA MOTORE
+%% DEFINITION OF THE CHARACTERISTIC CURVE OF THE MOTOR
 
-pb = 1500; %potenza base [W]
-nb = 1400; %velocità base [rpm]
-tb = pb/(nb*pi/30); %coppia base [Nm]
-tm = 12; %coppia massima[Nm]
-nm = 800; %velocità massima alla coppia massima[rpm]
-nc = nb*1.01; %velocità massima alla potenza base [rpm]
-Pmax = 1500;
-Tmax = 12;
+pb = 13500; %base power [W]
+nb = 5000; %base speed [rpm]
+tb = pb/(nb*pi/30); %base torque [Nm]
+tm = 120; %maximum torque[Nm]
+nm = 3500; %maximum speed at maximum torque[rpm]
+nc = nb*1.01; %maximum speed at base power [rpm]
+Pmax = 13500;
+Tmax = 120;
 
 motorspeed = linspace(0, 8000, 10000);
 
-%creo il vettore della coppia
+%create the torque vector
 motortrq = zeros(1,length(motorspeed));
 for i = 1:length(motorspeed)
     if motorspeed(i) <= nm
@@ -80,20 +70,17 @@ grid
 xlabel('Motor Speed [rmp]')
 ylabel('Motor Torque [Nm]')
 title('Torque Curve')
-ylim([0 130])
 
 
 subplot(2,1,2)
 plot(motorspeed,motorpwr)
 grid
 xlabel('Motor Speed [rmp]')
-ylabel('Motor Power [Nm]')
+ylabel('Motor Power [W]')
 title('Power Curve')
 
-%% CREAZIONE DEL PROFILO DI VELOCITà
-
+%% CREATION OF THE REFERENCE SPEED (STEP FUNCTION)
 time = linspace(1, 50, 10000);
-% vehiclespeed = 30*sin(time)+35;
 vehiclespeed = zeros(1,length(time));
 for i = 1:length(time)
     if time(i) < 1.1
